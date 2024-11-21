@@ -1,0 +1,41 @@
+:root {
+  --title-font: "irish groove";
+}
+* {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+
+  font-size: 1.5rem;
+  font-family: var(--title-font);
+  line-height: 130%;
+  color: #ffffff;
+  text-align: center;
+}
+nav {
+  display: flex;
+}
+
+header {
+  box-sizing: border-box;
+  color: #ffffff;
+}
+.btn {
+  border: 0.1rem;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  margin: 0.5rem;
+  padding: 1px;
+  border-radius: 0.1rem;
+  position: relative;
+  text-align: right;
+  font-size: 0.6rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: var(--title-font);
+  color: #ffffff;
+}
+.btn:hover {
+  color: rgb(161, 161, 161);
+}
