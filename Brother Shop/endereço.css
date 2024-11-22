@@ -1,0 +1,39 @@
+body {
+  font-family: "Irish Grover", cursive;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+.addres-page {
+  text-align: center;
+  padding: 5rem;
+}
+.addres-page h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.map-image {
+  width: 25rem;
+
+  margin-bottom: 2rem;
+}
+.map {
+  width: 25rem;
+  border-radius: 4.5rem;
+}
+.btn {
+  background-color: transparent;
+  border: 0.1rem solid white;
+  color: white;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+.btn:hover {
+  background-color: transparent;
+  color: rgb(161, 161, 161);
+}

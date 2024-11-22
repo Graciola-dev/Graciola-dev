@@ -1,0 +1,45 @@
+body {
+  font-family: "Irish Grover", cursive;
+  margin: 1rem;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+/* Estilo da página de "Quem Somos?" */
+.who-we-are-page {
+  text-align: center;
+  padding: 50px;
+}
+
+.who-we-are-page h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+/* Linha de separação */
+.separator {
+  border: none;
+  height: 2px;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilo dos botões */
+.btn {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: rgb(161, 161, 161);
+  color: black;
+}

@@ -1,41 +1,161 @@
-:root {
-  --title-font: "irish groove";
-}
-* {
-  background-color: black;
-  padding: 0;
+body {
+  background: linear-gradient(135deg, #000000, #434343);
+  font-family: "Irish Grover", sans-serif;
+  color: white;
   margin: 0;
-  box-sizing: 0;
-
-  font-size: 1.5rem;
-  font-family: var(--title-font);
-  line-height: 130%;
-  color: #ffffff;
+  padding: 0;
+}
+.header h1 {
   text-align: center;
+  margin-top: 5rem;
+  font-size: 3rem;
 }
-nav {
-  display: flex;
+.separator {
+  border: none;
+  height: 0.05rem;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-header {
-  box-sizing: border-box;
-  color: #ffffff;
+.nav {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
 }
 .btn {
-  border: 0.1rem;
-  justify-content: space-around;
-  flex-direction: row-reverse;
+  background-color: transparent;
+  border: 0.2rem solid white;
+  color: white;
+  padding: 0.7rem 1.4rem;
   margin: 0.5rem;
-  padding: 1px;
-  border-radius: 0.1rem;
-  position: relative;
-  text-align: right;
-  font-size: 0.6rem;
-  box-sizing: border-box;
+  font-size: 0.3rem;
   cursor: pointer;
-  font-family: var(--title-font);
-  color: #ffffff;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, color 0.3s;
 }
 .btn:hover {
+  background-color: transparent;
   color: rgb(161, 161, 161);
+}
+.products-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.products-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: white;
+}
+
+/* Estilo para cada produto */
+.product {
+  display: inline-block;
+  width: 30%;
+  margin: 15px;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  grid-column: auto;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Estilo para as descrições em lista */
+.product-description {
+  list-style-type: none; /* Remove a bolinha padrão da lista */
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.product-description li {
+  font-size: 1rem;
+  color: white;
+  text-align: left;
+  margin-bottom: 10px; /* Espaço entre os itens da lista */
+}
+
+/* Estilo do título do produto */
+.product-info h3 {
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 15px;
+}
+
+/* Estilo para o preço */
+.price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffee00;
+  margin-top: 10px;
+}
+
+/* Estilo para o botão de compra */
+.btn {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: rgb(161, 161, 161);
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a .btn {
+  color: white;
+  text-decoration: none;
+}
+.nav {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media (max-width: 1201px) {
+  .nav {
+    align-items: center;
+    position: relative;
+    top: unset;
+    right: unset;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .product {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+    width: 100%;
+  }
 }

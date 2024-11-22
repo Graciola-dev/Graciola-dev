@@ -1,0 +1,43 @@
+body {
+  background-color: black;
+  font-family: "Irish Grover", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.h .whatsapp-page {
+  padding: 50px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  font-family: "Irish Grover", sans-serif;
+}
+
+.whatsapp-page .btn {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.whatsapp-page .btn:hover {
+  background-color: rgb(161, 161, 161);
+  color: black;
+}
+
+/* Estilo para os títulos */
+.whatsapp-page h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Estilo para o texto */
+.whatsapp-page p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
